@@ -14,7 +14,7 @@ package com.ming.HomeWorkLesson4;
 public class RecursionMinimum {
 
 	public RecursionMinimum() {
-		// TODO Auto-generated constructor stub
+		 
 	}
 	
 	/*

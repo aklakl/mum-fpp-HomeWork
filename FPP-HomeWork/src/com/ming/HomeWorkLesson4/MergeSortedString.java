@@ -39,8 +39,8 @@ public class MergeSortedString {
 Find the solutions for the given problem using recursive approach.
 1. Merge the two sorted string into a single sorted string.
 Example : String1 = “ ace ”
- String2 = “ bdf ”
- Output : “ abcdef ”
+String2 = “ bdf ”
+Output : “ abcdef ”
 */
 
 	public static void main(String[] args) {
