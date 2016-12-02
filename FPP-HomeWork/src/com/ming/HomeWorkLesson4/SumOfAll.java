@@ -1,5 +1,7 @@
 package com.ming.HomeWorkLesson4;
 
+import java.util.Arrays;
+
 /**
  * 
  * @author  Ming Li  
@@ -12,19 +14,23 @@ package com.ming.HomeWorkLesson4;
 public class SumOfAll {
 
 	public SumOfAll() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	//. Find the sum of all items in an array.
-	public void findSumOfAll() {
-
-
-		
+	public static long findSumOfAll(long[] target ) {
+		if (target.length==1)
+			return target[0];
+		long[] transportItem = new long[target.length-1];
+		transportItem  = Arrays.copyOfRange(target, 1, target.length);
+		return target[0]+findSumOfAll(transportItem);
 	}
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		long[] target = {1,2,3,5,7,8,12,43123,123,66,9089,};
+		long result = findSumOfAll(target);
+		System.out.println("the sum of the "+Arrays.toString(target)+" is "+result);
 
 	}
 	
