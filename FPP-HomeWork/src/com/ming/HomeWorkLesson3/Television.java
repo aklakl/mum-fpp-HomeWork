@@ -18,6 +18,9 @@ public class Television {
 	private int volume = 0;
 	private String MANUFACTURER;
 	
+	private int[] rangeChannel = {0,200};
+	private int[] rangeVolume  = {0,200};
+	
 	public Television() {
 		// TODO Auto-generated constructor stub
 		this("default",200);
@@ -31,7 +34,12 @@ public class Television {
 	
 	public void setChannel(int station){
 		if (powerOn){
-			this.channel = station;
+			if  (station>=rangeChannel[0] && station<=rangeChannel[1] ){
+				this.channel = station;
+				System.out.println(this.MANUFACTURER+" setChannel successed");
+			}else{
+				System.out.println(this.MANUFACTURER+"| you set the Channel:"+station+" out of the range");
+			}
 		}else{
 			System.out.println(this.MANUFACTURER+" is powerOFF");
 		}
@@ -49,8 +57,12 @@ public class Television {
 	
 	public void increaseVolume(){
 		if (powerOn){
-			this.volume++;
-			System.out.println(this.MANUFACTURER+ "'s Volume is"+this.volume);
+			if  (this.volume>=rangeVolume[0] && this.volume<=rangeVolume[1] ){
+				this.volume++;
+				System.out.println(this.MANUFACTURER+ "'s Volume is"+this.volume);
+			}else{
+				System.out.println(this.MANUFACTURER+"| the volume is:"+this.volume+" out of the range");
+			}
 		}else{
 			System.out.println(this.MANUFACTURER+" is powerOFF, you can't increaseVolume");
 		}
