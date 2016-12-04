@@ -5,34 +5,31 @@ import java.util.Date;
 
 /**
  * 
- * @author  Ming Li  
- * @Student No  985579
+ * @author Ming Li
+ * @Student No 985579
  * @date Dec 3,2016
  * 
- * @description:   Solution for com.ming.HomeWorkLesson5Day1  Quesetion 1 
+ * @description: Solution for com.ming.HomeWorkLesson5Day1 Question 1
  *
  */
-public class Employee extends Person{
-	
-	
-	//An employee has a department, job title, and date of hire. In addition, there are hourly employees (hourly rate, hours worked, and union dues) and salaried employees (annual salary)
+public class Employee extends Person {
+
 	protected String department;
-	
+
 	protected String jobTitle;
-	
+
 	protected Date hireDate;
-	
+
 	protected String addition;
-	
-	protected double hourlyFate; 
-	
+
+	protected double hourlyFate;
+
 	protected int hoursWorked;
-	
+
 	protected double unionDues;
-	
+
 	protected double annualSalary;
-	
-	
+
 	public String getDepartment() {
 		return department;
 	}
@@ -98,32 +95,26 @@ public class Employee extends Person{
 	}
 
 	public Employee() {
-		
+
 	}
 
-	
-	public void display(){
+	public void display() {
 		super.display();
 		System.out.println("invoke class Employee's display()");
 		Class cls = this.getClass();
-		Field[] fields = cls.getDeclaredFields();  
-		for(int i=0; i<fields.length; i++){  
-            Field f = fields[i];  
-            f.setAccessible(true);  
-            try {
+		Field[] fields = cls.getDeclaredFields();
+		for (int i = 0; i < fields.length; i++) {
+			Field f = fields[i];
+			f.setAccessible(true);
+			try {
 				System.out.println("attributeName:" + f.getName() + "	|attributeValue:" + f.get(this));
 			} catch (IllegalArgumentException e) {
 				e.printStackTrace();
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();
-			}  
-		}  
+			}
+		}
 	}
-	
-	public static void main(String[] args) {
-		 
 
-	}
-	
 
 }

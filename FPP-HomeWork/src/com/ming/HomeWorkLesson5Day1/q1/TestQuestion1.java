@@ -8,7 +8,7 @@ import java.util.Date;
  * @Student No  985579
  * @date Dec 3,2016
  * 
- * @description:    Test for Quesetion 1 
+ * @description:    Test for com.ming.HomeWorkLesson5Day1 Question 1
  *
  */
 public class TestQuestion1 {

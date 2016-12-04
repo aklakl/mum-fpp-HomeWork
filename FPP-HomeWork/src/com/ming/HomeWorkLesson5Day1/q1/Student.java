@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
  * @Student No  985579
  * @date Dec 3,2016
  * 
- * @description:    Solution for com.ming.HomeWorkLesson5Day1  Quesetion 1 
+ * @description:    Solution for com.ming.HomeWorkLesson5Day1  Question 1 
  *
  */
 public class Student extends Person{
