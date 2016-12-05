@@ -28,7 +28,7 @@ If your input is “akel” in return ‘a’
 		if (target.charAt(0) < target.charAt(1)){
 			return getRecursionMinimum(target.substring(0, 1) + target.substring(2));
 		}else{
-			return getRecursionMinimum(target.substring(2));
+			return getRecursionMinimum(target.substring(1));
 		}
 	}
 	
@@ -37,8 +37,9 @@ If your input is “akel” in return ‘a’
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String string = "akel";
-		string = "Move disk 1 from A to C";
+		String string = "gudetf";//akel
+		//string = "Move disk 1 from A to C";
+		//string = "gudetaf";
 		char minimum = getRecursionMinimum(string);
 		System.out.println("The string: \""+string+"\" has minimum value is "+minimum);
 	}
