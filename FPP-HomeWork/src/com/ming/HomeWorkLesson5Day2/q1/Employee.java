@@ -54,6 +54,9 @@ public abstract class Employee implements Payable {
 		this.socialSecurityNumber = socialSecurityNumber;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.firstName+"\n"+this.lastName+"\n"+this.socialSecurityNumber;
+	}
 
 }

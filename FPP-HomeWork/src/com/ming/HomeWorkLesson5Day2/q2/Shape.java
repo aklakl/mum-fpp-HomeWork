@@ -12,15 +12,31 @@ public abstract class Shape {
 
 	String shapeName;
 	
+	String getShapeName(){
+		return shapeName;
+	}
+	
 	public Shape() {
 		//
-		
+	}
+	
+	public Shape(String shapeName) {
+		super();
+		this.shapeName = shapeName;
 	}
 
-	public static void main(String[] args) {
-		//
-		
-
+	public String toString(){
+		return super.toString() + "\n" + getClass().getSimpleName()+"\n"+ this.shapeName;
 	}
+	
+	abstract double computeArea();
+	
+	abstract double computePerimeter();
+	
+	abstract void readShapeData();
+
+	
+
+ 
 
 }

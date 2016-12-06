@@ -80,5 +80,10 @@ public class Invoice implements Payable {
 		System.out.println(getClass().getSimpleName()+" class is "+result); 
 		return result; 
 	}
-
+	
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.partNumber+"\n"+this.partDescription+"\n"+quantily+"\n"+this.pricePerItem;
+	}
+	
 }

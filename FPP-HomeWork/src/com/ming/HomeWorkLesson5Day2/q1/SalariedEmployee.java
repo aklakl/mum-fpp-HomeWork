@@ -50,5 +50,10 @@ public class SalariedEmployee extends Employee {
 		System.out.println(getClass().getSimpleName()+" class is "+result); 
 		return result; 
 	}
+	
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.weeklySalary+"\n";
+	}
 
 }

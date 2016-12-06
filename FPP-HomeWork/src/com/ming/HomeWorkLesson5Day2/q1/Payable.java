@@ -11,4 +11,6 @@ package com.ming.HomeWorkLesson5Day2.q1;
 public interface Payable {
 	double getPaymentAmount();
 	
+	String toString();
+	
 }

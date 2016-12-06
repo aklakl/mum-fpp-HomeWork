@@ -49,5 +49,9 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 		return result;
 	}
 	
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.baseSalary+"\n";
+	}
 	
 }

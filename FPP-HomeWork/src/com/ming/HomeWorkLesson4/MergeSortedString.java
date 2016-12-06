@@ -15,6 +15,7 @@ public class MergeSortedString {
 		
 	}
 	
+	//20161205 modify a mistake
 	public static String getMergeSortedString(String string1,String string2) {
 		//System.out.println("string1:"+string1+"|string2:"+string2);
 		if (string1.length() == 0 && string2.length() == 0 ){

@@ -63,5 +63,10 @@ public class CommissionEmployee extends Employee {
 		return result;
 	}
 	
-
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.grossSales+"\n"+this.commissionRate;
+	}
+	
+	
 }

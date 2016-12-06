@@ -29,17 +29,18 @@ public class TestForQuestion1 {
 	public static void main(String[] args) {
 		//test for class HomeWorkLesson5Day2 Question 1
 		Object[] employeeArray = {
-			new CommissionEmployee("Ming","Li","232301198509150014",12,0.10),
-			new BasePlusCommissionEmployee("John","Lee","232301198509150014",12,0.10,2.6),
-			new HourlyEmployee("Joseph","bexerman","232301198509150014",11,0.25),
-			new SalariedEmployee("Joseph","bexerman","232301198509150014",10),
+			new CommissionEmployee("Ming","Li","232301198509150014",13,0.10),
+			new BasePlusCommissionEmployee("John","Lee","111111111111111111",12,0.10,2.6),
+			new HourlyEmployee("Joseph","bexerman","123456789012345678",11,0.25),
+			new SalariedEmployee("box","liu","2222222222222222",10),
 			new Invoice("test","test1",123,0.11),
 		};
 		
 		for (Object obj : employeeArray ){
 			Payable payable =(Payable)obj ;
 			payable.getPaymentAmount();
-			payable.toString();
+			System.out.println("=====================");
+			System.out.println(payable.toString());
 		}
 		//System.out.println("the total salary is :"+salary);
 		
