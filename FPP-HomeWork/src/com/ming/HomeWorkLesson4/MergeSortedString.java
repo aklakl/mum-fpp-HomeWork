@@ -27,9 +27,9 @@ public class MergeSortedString {
 			return string1.substring(0, 1)+getMergeSortedString(string1.substring(1),"");
 		}
 		if (string1.charAt(0) <= string2.charAt(0)){
-			return string1.substring(0, 1)+string2.substring(0, 1)+getMergeSortedString(string1.substring(1),string2.substring(1));
+			return string1.substring(0, 1)+getMergeSortedString(string1.substring(1),string2.substring(0));
 		}else{
-			return string2.substring(0, 1)+string1.substring(0, 1)+getMergeSortedString(string1.substring(1),string2.substring(1)); 
+			return string2.substring(0, 1)+getMergeSortedString(string1.substring(0),string2.substring(1)); 
 		}
 	}
 	
@@ -44,8 +44,8 @@ Output : “ abcdef ”
 */
 
 	public static void main(String[] args) {
-		String string1 = "acef";
-		String string2 = "bdg";
+		String string1 = "abf";
+		String string2 = "cde";
 		String result = getMergeSortedString(string1,string2);
 		System.out.println(result);
 	}
