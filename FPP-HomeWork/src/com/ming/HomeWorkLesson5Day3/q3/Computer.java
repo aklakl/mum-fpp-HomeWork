@@ -71,7 +71,6 @@ public class Computer implements Cloneable {
 	double computePower(){
 		return diskSize;
 	}
-	// return ramSize multiplied by processorSpeed Override the toString() method to display the current status 
 	
 	@Override
 	public String toString(){
