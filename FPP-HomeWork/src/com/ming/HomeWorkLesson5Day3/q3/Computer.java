@@ -119,10 +119,11 @@ public class Computer implements Cloneable {
 	
 	@Override
 	public int hashCode(){
+		//this.hashCode();//the object's previous hashCode
 		int result = 11;
-		System.out.println(getClass().getSimpleName() + " history hashCode: " + super.hashCode());
-		result = (int) (result + 17+ this.manufacturer.hashCode() +this.processor.hashCode() + this.ramSize + this.diskSize + this.processorSpee);
-		System.out.println(getClass().getSimpleName() + " newly hashCode: " + result);
+		//System.out.println(getClass().getSimpleName() + " history hashCode: " + super.hashCode());
+		result = (int) (result + 17+ this.manufacturer.hashCode() +this.processor.hashCode() + this.ramSize + this.diskSize + this.processorSpee);//this is the object's  Override  hashCode  
+		//System.out.println(getClass().getSimpleName() + " newly hashCode: " + result);
 		return result;
 	}
 
