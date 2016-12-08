@@ -16,7 +16,7 @@ import java.awt.Toolkit;
  * @Student No  985579
  * @date Dec 7,2016
  * 
- * @description:    Solution for com.ming.HomeWorkLesson6  Question 1
+ * @description:    Solution for com.ming.HomeWorkLesson6  Question 2
  *					
  */
 import java.awt.event.*;
