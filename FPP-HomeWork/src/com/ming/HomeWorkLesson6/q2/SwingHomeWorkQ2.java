@@ -28,7 +28,6 @@ public class SwingHomeWorkQ2 {
 	
 	private JPanel panel = new JPanel();
 	
-	
 	public SwingHomeWorkQ2() {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -72,8 +71,6 @@ public class SwingHomeWorkQ2 {
 			JOptionPane.showMessageDialog(null, msg, "WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
 			//System.out.println("Got input: "+inputString);
 		}
-
-
 	}
 	
 	
