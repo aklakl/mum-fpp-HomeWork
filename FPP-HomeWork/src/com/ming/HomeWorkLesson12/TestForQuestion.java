@@ -1,4 +1,4 @@
-package com.ming.HomeWorkLesson9;
+package com.ming.HomeWorkLesson12;
 
 /**
  * 
@@ -9,15 +9,15 @@ package com.ming.HomeWorkLesson9;
  * @description:    Test 	 for com.ming.HomeWorkLesson6  Question 1
  *					Solution for com.ming.HomeWorkLesson6  Question 1 
  */
-public class Test {
-	//encapsulation
-	public Test() {
+public class TestForQuestion {
+
+	public TestForQuestion() {
 		
 	}
 
 	public static void main(String[] args) {
 		// test for 
-		Test test = new Test();
+		TestForQuestion test = new TestForQuestion();
 	}
 
 }

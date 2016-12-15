@@ -1,4 +1,4 @@
-package com.ming.HomeWorkLesson9;
+package com.ming.HomeWorkLesson10;
 
 /**
  * 
@@ -6,14 +6,12 @@ package com.ming.HomeWorkLesson9;
  * @Student No  985579
  * @date Dec 15,2016
  * 
- * @description:    Solution for com.ming.HomeWorkLesson9 Quesetion 3 
+ * @description:    Solution for com.ming.HomeWorkLesson10 Quesetion 1 
  *
  */
-public class PriorityQueue {
+public class MyBST {
 
-	
-	
-	public PriorityQueue() {
+	public MyBST() {
 		// TODO Auto-generated constructor stub
 	}
 
